@@ -1,0 +1,18 @@
+[package]
+name = "operatingsystem"
+version = "0.1.0"
+authors = ["Jonathan Pallant <github@thejpster.org.uk>"]
+edition = "2018"
+
+[lib]
+crate-type = ["staticlib", "cdylib"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+bios_common = { path = "../bios_common" }
+

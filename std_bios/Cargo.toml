@@ -1,0 +1,9 @@
+[package]
+name = "std_bios"
+version = "0.1.0"
+authors = ["Jonathan Pallant <github@thejpster.org.uk>"]
+edition = "2018"
+
+[dependencies]
+bios_common = { path = "../bios_common" }
+libloading = "0.7"
